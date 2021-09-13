@@ -1,0 +1,39 @@
+.container{
+    border:1px solid #333;
+    height:300px;
+    width:30%;
+}
+
+section{
+    border: 1px solid #333;
+    /* height: 50px; */
+    width: 50px;
+}
+
+/*Flexbox container*/
+.flexbox-container{
+    display:flex;
+    flex-direction:row; /*row (default) | row-reverse | column | column-reverse; */
+    flex-wrap: nowrap; /*nowrap (default. items will try to fit into one line) | wrap | wrap-reverse;*/
+
+    /*short-hand*/
+    flex-flow:row wrap; /*flex-direction flex-wrap*/
+
+
+    /* Positioning items along the main-axis */
+    justify-content: flex-start; /*flex-start (default) | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;*/
+
+    /* Positioning items along the cross-axis */
+    align-items: stretch;/*stretch (default) | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;*/
+
+    /* Positioning lines along the cross-axis. NOTE! need flex-wrap to be set to either wrap OR wrap-reverse. nowrap disables this property */
+    align-content: stretch; /*flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start (default)| end | baseline | first baseline | last baseline + ... safe | unsafe;*/
+
+    row-gap:10px;
+    column-gap:20px;
+    /*short-hand*/
+    gap:10px;
+    gap:10px 20px; /*row-gap column-gap*/
+}
+
+
